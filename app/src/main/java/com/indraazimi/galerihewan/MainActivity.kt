@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showNext() {
-        index++
+        index = if (index == hewan.size-1) 0 else index + 1
         val textView: TextView = findViewById(R.id.nameTextView)
         textView.text = hewan[index]
     }
