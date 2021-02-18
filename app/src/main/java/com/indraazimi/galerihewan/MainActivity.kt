@@ -11,6 +11,7 @@ package com.indraazimi.galerihewan
 
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
@@ -29,6 +30,17 @@ class MainActivity : AppCompatActivity() {
 
     private fun showNext() {
         index = if (index == hewan.size-1) 0 else index + 1
+
+        val imageView: ImageView = findViewById(R.id.imageView)
+        val resourceId = when(index) {
+            1 -> R.drawable.bebek
+            2 -> R.drawable.domba
+            3 -> R.drawable.kambing
+            4 -> R.drawable.sapi
+            else -> R.drawable.ayam
+        }
+        imageView.setImageResource(resourceId)
+
         val textView: TextView = findViewById(R.id.nameTextView)
         textView.text = hewan[index]
     }
