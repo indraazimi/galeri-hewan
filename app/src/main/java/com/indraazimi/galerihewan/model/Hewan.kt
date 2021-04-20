@@ -7,10 +7,10 @@
  * terhadap project ini tanpa izin pemilik hak cipta.
  */
 
-package com.indraazimi.galerihewan
+package com.indraazimi.galerihewan.model
 
 data class Hewan(
-        val nama: String,
-        val namaLatin: String,
-        val imageResId: Int
+    val nama: String,
+    val namaLatin: String,
+    val imageResId: Int
 )
