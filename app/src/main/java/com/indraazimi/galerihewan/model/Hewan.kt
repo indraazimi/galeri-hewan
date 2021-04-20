@@ -9,12 +9,8 @@
 
 package com.indraazimi.galerihewan.model
 
-import com.indraazimi.galerihewan.R
-
 data class Hewan(
         val nama: String,
         val namaLatin: String,
-        val imageResId: Int = R.drawable.angsa
-        // Untuk saat ini kita pakai gambar default saja dulu.
-        // Gambar akan diambil dari internet di langkah selanjutnya.
+        val imageId: String
 )
