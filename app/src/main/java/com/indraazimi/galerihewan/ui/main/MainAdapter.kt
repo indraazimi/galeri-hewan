@@ -7,7 +7,7 @@
  * terhadap project ini tanpa izin pemilik hak cipta.
  */
 
-package com.indraazimi.galerihewan
+package com.indraazimi.galerihewan.ui.main
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

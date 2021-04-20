@@ -8,11 +8,12 @@
   ~ terhadap project ini tanpa izin pemilik hak cipta.
   -->
 
-<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
-    android:name="com.indraazimi.galerihewan.ui.main.MainFragment"
+    android:id="@+id/recyclerView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
     tools:context=".MainActivity"
-    tools:viewBindingIgnore="true" />
+    tools:listitem="@layout/list_item" />
