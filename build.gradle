@@ -11,6 +11,7 @@
 buildscript {
     ext.kotlin_version = "1.4.10"
     ext.retrofit_version = "2.9.0"
+    ext.room_version = "2.3.0"
     repositories {
         google()
         jcenter()
