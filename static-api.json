@@ -1,0 +1,12 @@
+[
+    {"nama": "Angsa", "namaLatin": "Cygnus olor", "imageId": "angsa"},
+    {"nama": "Ayam", "namaLatin": "Gallus gallus", "imageId": "ayam"},
+    {"nama": "Bebek", "namaLatin": "Cairina moschata", "imageId": "bebek"},
+    {"nama": "Domba", "namaLatin": "Ovis ammon", "imageId": "domba"},
+    {"nama": "Kalkun", "namaLatin": "Meleagris gallopavo", "imageId": "kalkun"},
+    {"nama": "Kambing", "namaLatin": "Capricornis sumatrensis", "imageId": "kambing"},
+    {"nama": "Kelinci", "namaLatin": "Oryctolagus cuniculus", "imageId": "kelinci"},
+    {"nama": "Kerbau", "namaLatin": "Bubalus bubalis", "imageId": "kerbau"},
+    {"nama": "Kuda", "namaLatin": "Equus caballus", "imageId": "kuda"},
+    {"nama": "Sapi", "namaLatin": "Bos taurus", "imageId": "sapi"}
+]
