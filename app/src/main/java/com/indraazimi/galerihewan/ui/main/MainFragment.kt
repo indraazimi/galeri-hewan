@@ -10,6 +10,7 @@
 package com.indraazimi.galerihewan.ui.main
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -38,6 +39,8 @@ class MainFragment : Fragment() {
             adapter = myAdapter
             setHasFixedSize(true)
         }
+
+        Log.i("MainFragment", "onCreateView dipanggil")
         return binding.root
     }
 
@@ -51,6 +54,28 @@ class MainFragment : Fragment() {
         viewModel.getStatus().observe(viewLifecycleOwner, {
             updateProgress(it)
         })
+
+        Log.i("MainFragment", "onViewCreated dipanggil")
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.i("MainFragment", "onStart dipanggil")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.i("MainFragment", "onResume dipanggil")
+    }
+
+    override fun onPause() {
+        Log.i("MainFragment", "onPause dipanggil")
+        super.onPause()
+    }
+
+    override fun onStop() {
+        Log.i("MainFragment", "onStop dipanggil")
+        super.onStop()
     }
 
     private fun updateProgress(status: ApiStatus) {
