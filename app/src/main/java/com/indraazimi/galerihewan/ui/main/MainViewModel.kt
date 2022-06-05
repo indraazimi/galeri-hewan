@@ -18,6 +18,7 @@ import androidx.lifecycle.viewModelScope
 import androidx.work.ExistingWorkPolicy
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkManager
+import com.indraazimi.galerihewan.MainActivity
 import com.indraazimi.galerihewan.model.Hewan
 import com.indraazimi.galerihewan.network.ApiStatus
 import com.indraazimi.galerihewan.network.HewanApi
@@ -58,7 +59,7 @@ class MainViewModel : ViewModel() {
             .build()
 
         WorkManager.getInstance(app).enqueueUniqueWork(
-            "updater",
+            MainActivity.CHANNEL_ID,
             ExistingWorkPolicy.REPLACE,
             request
         )
