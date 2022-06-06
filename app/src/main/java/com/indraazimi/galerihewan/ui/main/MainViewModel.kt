@@ -9,16 +9,22 @@
 
 package com.indraazimi.galerihewan.ui.main
 
+import android.app.Application
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import androidx.work.ExistingWorkPolicy
+import androidx.work.OneTimeWorkRequestBuilder
+import androidx.work.WorkManager
 import com.indraazimi.galerihewan.model.Hewan
 import com.indraazimi.galerihewan.network.ApiStatus
 import com.indraazimi.galerihewan.network.HewanApi
+import com.indraazimi.galerihewan.network.UpdateWorker
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import java.util.concurrent.TimeUnit
 
 class MainViewModel : ViewModel() {
 
@@ -45,4 +51,16 @@ class MainViewModel : ViewModel() {
     fun getData(): LiveData<List<Hewan>> = data
 
     fun getStatus(): LiveData<ApiStatus> = status
+
+    fun scheduleUpdater(app: Application) {
+        val request = OneTimeWorkRequestBuilder<UpdateWorker>()
+            .setInitialDelay(1, TimeUnit.MINUTES)
+            .build()
+
+        WorkManager.getInstance(app).enqueueUniqueWork(
+            "updater",
+            ExistingWorkPolicy.REPLACE,
+            request
+        )
+    }
 }
