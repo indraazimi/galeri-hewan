@@ -16,4 +16,7 @@
     <string name="channel_desc">Update data hewan otomatis</string>
     <string name="notif_title">Ada hewan baru!</string>
     <string name="notif_text">Cek sekarang biar nggak penasaran..</string>
+    <string name="ok">Ok</string>
+    <string name="premissionsNotif">Untuk mendapatkan notifikasi, anda harus mengaktifkan izin notifikasi secara manual melalui details aplikasi ini.\n\nAbaikan jika sudah mengizinkan akses notifikasi.</string>
+    <string name="batal">batal</string>
 </resources>
