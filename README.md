@@ -1,5 +1,9 @@
 # Galeri Hewan
 
+**Repository diarsipkan** karena materi Mobpro 1 mulai Februari 2024 sudah menggunakan Jetpack Compose untuk layout, dan menggunakan studi kasus yang berbeda. Untuk melihat project terbaru, silahkan kunjungi repo [indraazimi/mobpro1-compose](https://github.com/indraazimi/mobpro1-compose) 😊
+
+..
+
 Aplikasi Android sederhana yang menampilkan list hewan menggunakan RecyclerView. Data hewan berasal dari static API. Terdapat juga background proses yang akan memberi tahu pengguna ada data baru menggunakan notifikasi.
 
 Tampilan Utama                              | Tampilan Notifikasi
